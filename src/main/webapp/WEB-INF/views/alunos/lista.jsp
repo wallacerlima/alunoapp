@@ -23,7 +23,7 @@
 
 		<div class="jumbotron">
 		   <h1> <i class="fa fa-tachometer" aria-hidden="true"></i> Aplicacao com springmvc</h1>
-		   <h3>Com configuracao manual</h3>
+		   <h3>Com configuracao manual - Deploy pelo Jenkins</h3>
 		</div>
 
 		<div class="d-flex justify-content-between">
