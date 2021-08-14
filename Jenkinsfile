@@ -9,7 +9,7 @@ pipeline {
         stage('Build') {
             steps {                
                 git 'https://github.com/wallacerlima/alunoapp.git'       
-                bat "mvn clean package"
+                sh "mvn clean package"
             }
         }
         
