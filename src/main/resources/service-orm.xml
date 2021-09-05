@@ -47,9 +47,9 @@
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<property name="url"
-			value="jdbc:mysql://localhost:3306/aulaweb?createDatabaseIfNotExist=true&amp;useSSL=false" />
-		<property name="username" value="test" />
-		<property name="password" value="Mn12345678-" />
+			value="jdbc:mysql://terraform-20210905174334083200000001.cmymlbop9rtf.sa-east-1.rds.amazonaws.com:3306/aulaweb?createDatabaseIfNotExist=true&amp;useSSL=false" />
+		<property name="username" value="admin" />
+		<property name="password" value="QwErTy123" />
 	</bean>
 	
 
