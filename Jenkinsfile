@@ -13,9 +13,15 @@ pipeline {
             }
         }
         
-        stage('Deploy') {
+        stage('Deploy n0') {
             steps {
-                deploy adapters: [tomcat8(credentialsId: '8cea677d-6ba0-4802-ab49-f624207cfdef', path: '', url: 'http://ec2-54-94-171-77.sa-east-1.compute.amazonaws.com:8080/')], contextPath: 'alunoapp', war: 'target/alunoapp.war'
+                deploy adapters: [tomcat9(credentialsId: 'tomcat-deployer', path: '', url: 'http://ec2-18-228-235-159.sa-east-1.compute.amazonaws.com:8080/')], contextPath: 'alunoapp', war: 'target/alunoapp.war'
+            }
+        }
+        
+        stage('Deploy n1') {
+            steps {
+                deploy adapters: [tomcat9(credentialsId: 'tomcat-deployer', path: '', url: 'http://ec2-18-229-124-69.sa-east-1.compute.amazonaws.com:8080/')], contextPath: 'alunoapp', war: 'target/alunoapp.war'
             }
         }
         
